@@ -92,7 +92,6 @@ def generate_html_report(df: pd.DataFrame, output_file: str = "nuclei_profession
 <body>
     <div class="header text-center">
         <div class="container">
-        <img src="https://discoveryseniorliving.com/wp-content/uploads/2025/09/Discovery-Senior-Living-full.png" width="500" height="100">
         <h1><i class="fas fa-shield-alt"></i> DiscoSec Web Vulnerability Scan Report</h1>
             <p class="mb-0">Professional Security Assessment • {datetime.now().strftime("%d %B %Y at %H:%M")}</p>
         </div>
