@@ -9,4 +9,5 @@ pip install --upgrade pip
 pip install pandas openpyxl
 
 # 4. Now run your script using the venv python
-nuclei_orchestrator.py
+python nuclei_orchestrator.py
+python nuclei_html_generator
