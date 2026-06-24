@@ -149,7 +149,7 @@ def generate_html_report(df: pd.DataFrame, output_file: str = "nuclei_profession
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiscoSec — Vulnerability Scan Report</title>
+    <title>InfoSec — Vulnerability Scan Report</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
@@ -486,13 +486,12 @@ def generate_html_report(df: pd.DataFrame, output_file: str = "nuclei_profession
 <header class="site-header">
     <div class="logo-area">
         <div class="logo-icon">&#9673;</div>
-        <div class="logo-text">Disco<span>Sec</span></div>
+        <div class="logo-text">Info<span>Sec</span></div>
     </div>
     <div class="header-meta">Generated {generated_at}</div>
 </header>
 
 <div class="report-hero">
-    <img src="https://discoveryseniorliving.com/wp-content/uploads/2025/09/Discovery-Senior-Living-full.png" alt="Discovery Senior Living">
     <h1>Web Vulnerability Scan Report</h1>
     <p>Security Assessment &nbsp;&#183;&nbsp; {generated_at}</p>
 </div>
@@ -534,7 +533,7 @@ def generate_html_report(df: pd.DataFrame, output_file: str = "nuclei_profession
 </div>
 
 <footer class="site-footer">
-    <span>DiscoSec &mdash; Internal Security Use Only</span>
+    <span>InfoSec &mdash; Internal Security Use Only</span>
     <span>Nuclei Scan Report &nbsp;&#183;&nbsp; {generated_at}</span>
 </footer>
 
@@ -706,14 +705,14 @@ def generate_html_report(df: pd.DataFrame, output_file: str = "nuclei_profession
             }}).join('') + '</tr>';
         }}).join('');
         var w = window.open('','_blank');
-        w.document.write('<html><head><title>DiscoSec Report</title><style>'
+        w.document.write('<html><head><title>InfoSec Report</title><style>'
             + 'body{{font-family:sans-serif;font-size:10px;margin:16px}}'
             + 'h2{{margin-bottom:8px}}table{{border-collapse:collapse;width:100%}}'
             + 'th{{background:#1c2230;color:#fff;padding:5px 8px;text-align:left;font-size:9px;text-transform:uppercase}}'
             + 'td{{border-bottom:1px solid #ddd;padding:4px 8px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}'
             + 'tr:nth-child(even){{background:#f8f9fa}}'
             + '</style></head><body>'
-            + '<h2>DiscoSec — Vulnerability Scan Report</h2>'
+            + '<h2>InfoSec — Vulnerability Scan Report</h2>'
             + '<p style="color:#666;margin-bottom:12px">Generated {generated_at} &nbsp;|&nbsp; ' + filtered.length + ' findings</p>'
             + '<table><thead><tr>' + COLUMNS.map(function(c){{return '<th>'+c+'</th>';}}).join('') + '</tr></thead>'
             + '<tbody>' + rows + '</tbody></table>'
