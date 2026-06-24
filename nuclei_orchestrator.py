@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Discovery Senior Living - Nuclei Scan Automation Script
+Nuclei Scan Automation Script
 Author: CISO Office
 Description: Updates Nuclei templates, prompts for a target file, and runs a 
              multi-category scan with custom headers and JSONL output.
